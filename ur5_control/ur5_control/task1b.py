@@ -42,6 +42,7 @@ from geometry_msgs.msg import TransformStamped
 from scipy.spatial.transform import Rotation as R
 from sensor_msgs.msg import CompressedImage, Image
 import tf_transformations
+from time import sleep
 
 
 ##################### FUNCTION DEFINITIONS #######################
@@ -161,7 +162,13 @@ def detect_aruco(image):
     ############################################
 
     # print(image.shape)
-    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    while True:
+        try:
+            gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+            break
+        except Exception as e:
+            print('cvtColor Error! Retrying...')
+            sleep(1)
     aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
     parameters = cv2.aruco.DetectorParameters()
     corners, local_ids, rejected = cv2.aruco.detectMarkers(gray, aruco_dict, parameters=parameters)
@@ -178,9 +185,13 @@ def detect_aruco(image):
                 ids.append(local_ids[i])
                 center_aruco_list.append(np.mean(corners[i][0], axis=0))
                 rvec, tvec, _ = cv2.aruco.estimatePoseSingleMarkers([corners[i][0]], size_of_aruco_m, cam_mat, dist_mat)
+                rvec = rvec.squeeze()
                 rvec = cv2.Rodrigues(rvec)[0]
-                rot180 = np.array([[-1, 0, 0], [0, 1, 0], [0, 0, -1]])  # 180 degree rotation around Y-axis
-                rvec = cv2.Rodrigues(rot180 @ rvec)[0]
+                rvec = tf_transformations.euler_from_matrix(rvec)
+                rvec = list(rvec)
+                rvec[0] += np.radians(180)
+                rvec = tf_transformations.euler_matrix(rvec[0], rvec[1], rvec[2])
+                rvec = cv2.Rodrigues(rvec[:3, :3])[0]
                 rvec = rvec.flatten()
                 rvec = np.array([[rvec]])
                 # print('id: ', local_ids[i], 'rvec: ', rvec, '\ntvec: ', tvec)
@@ -269,11 +280,11 @@ class aruco_tf(Node):
             self.depth_image = self.bridge.imgmsg_to_cv2(data, '16UC1')
 
             # Normalize the Image
-            self.depth_image = cv2.normalize(self.depth_image, None, 0, 255, cv2.NORM_MINMAX)
-            self.depth_image = np.uint8(self.depth_image)
+            norm_depth_img = cv2.normalize(self.depth_image, None, 0, 255, cv2.NORM_MINMAX)
+            norm_depth_img = np.uint8(norm_depth_img)
 
             # Debugging
-            # cv2.imshow('Depth', self.depth_image)
+            # cv2.imshow('Depth', norm_depth_img)
             # cv2.waitKey(0)
             # cv2.destroyAllWindows()
             # cv2.waitKey(1)
@@ -400,19 +411,24 @@ class aruco_tf(Node):
             roll = 0
             pitch = 0
             yaw = angle_aruco
-
             q = tf_transformations.quaternion_from_euler(roll, pitch, yaw)
 
-            x = distance_from_rgb_list[i] * (sizeCamX - center_aruco_list[i][0] - centerCamX) / focalX
-            y = distance_from_rgb_list[i] * (sizeCamY - center_aruco_list[i][1] - centerCamY) / focalY
-            z = distance_from_rgb_list[i]
+            # print(center_aruco_list[i])
 
-            # cv2.circle(self.cv_image, (center_aruco_list[i][0], center_aruco_list[i][1]), 5, (0, 0, 255), -1)
+            distance_from_rgb = self.depth_image[int(center_aruco_list[i][1]), int(center_aruco_list[i][0])] / 1000
+
+            x = distance_from_rgb * (sizeCamX - center_aruco_list[i][0] - centerCamX) / focalX
+            y = distance_from_rgb * (sizeCamY - center_aruco_list[i][1] - centerCamY) / focalY
+            z = distance_from_rgb
+
+            cv2.circle(self.cv_image, (int(center_aruco_list[i][0]), int(center_aruco_list[i][1])), 5, (100, 0, 100), -1)
 
             tempStamped = TransformStamped()
+            
             tempStamped.header.stamp = self.get_clock().now().to_msg()
             tempStamped.header.frame_id = 'camera_link'
-            tempStamped.child_frame_id = 'cam_'+str(int(ids[i]))
+            tempStamped.child_frame_id = f'cam_{int(ids[i])}'
+
             tempStamped.transform.translation.x = x
             tempStamped.transform.translation.y = y
             tempStamped.transform.translation.z = z
@@ -422,17 +438,28 @@ class aruco_tf(Node):
             tempStamped.transform.rotation.w = q[3]
 
             self.br.sendTransform(tempStamped)
+            
+            try:
+                trans = self.tf_buffer.lookup_transform('camera_link', f'cam_{int(ids[i])}', rclpy.time.Time())
+            except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException):
+                print('DEAD')
+                continue
 
-            # (trans, rot) = self.tf_buffer.lookup_transform('base_link', 'obj_'+str(int(ids[i])), self.get_clock().now())
+            tempStamped = TransformStamped()
+            
+            tempStamped.header.stamp = self.get_clock().now().to_msg()
+            tempStamped.header.frame_id = 'base_link'
+            tempStamped.child_frame_id = f'obj_{int(ids[i])}'
+            
+            tempStamped.transform.translation.x = trans.transform.translation.x
+            tempStamped.transform.translation.y = trans.transform.translation.y
+            tempStamped.transform.translation.z = trans.transform.translation.z
+            tempStamped.transform.rotation.x = trans.transform.rotation.x
+            tempStamped.transform.rotation.y = trans.transform.rotation.y
+            tempStamped.transform.rotation.z = trans.transform.rotation.z
+            tempStamped.transform.rotation.w = trans.transform.rotation.w
 
-            # tempStamped = TransformStamped()
-            # tempStamped.header.stamp = self.get_clock().now().to_msg()
-            # tempStamped.header.frame_id = 'base_link'
-            # tempStamped.child_frame_id = 'obj_'+str(int(ids[i]))
-            # tempStamped.transform.translation = trans
-            # tempStamped.transform.rotation = rot
-
-            # self.br.sendTransform(tempStamped)
+            self.br.sendTransform(tempStamped)
 
         # Debugging
         cv2.imshow('Image', self.cv_image)
