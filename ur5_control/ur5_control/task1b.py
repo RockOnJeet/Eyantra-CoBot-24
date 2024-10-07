@@ -18,7 +18,7 @@
 *****************************************************************************************
 '''
 
-# Team ID:          [ Team-ID ]
+# Team ID:          [ 1605 ]
 # Author List:		[ Names of team members worked on this file separated by Comma: Name1, Name2, ... ]
 # Filename:		    task1b_boiler_plate.py
 # Functions:
@@ -185,29 +185,20 @@ def detect_aruco(image):
                 ids.append(local_ids[i])
                 center_aruco_list.append(np.mean(corners[i][0], axis=0))
                 rvec, tvec, _ = cv2.aruco.estimatePoseSingleMarkers([corners[i][0]], size_of_aruco_m, cam_mat, dist_mat)
-                rvec = rvec.squeeze()
-                rvec = cv2.Rodrigues(rvec)[0]
-                rvec = tf_transformations.euler_from_matrix(rvec)
-                rvec = list(rvec)
-                rvec[0] += np.radians(180)
-                rvec = tf_transformations.euler_matrix(rvec[0], rvec[1], rvec[2])
-                rvec = cv2.Rodrigues(rvec[:3, :3])[0]
-                rvec = rvec.flatten()
-                rvec = np.array([[rvec]])
+                # rvec = rvec.squeeze()
+                # rvec = cv2.Rodrigues(rvec)[0]
+                # rvec = tf_transformations.euler_from_matrix(rvec)
+                # rvec = list(rvec)
+                # rvec[0] += np.radians(180)
+                # rvec = tf_transformations.euler_matrix(rvec[0], rvec[1], rvec[2])
+                # rvec = cv2.Rodrigues(rvec[:3, :3])[0]
+                # rvec = rvec.flatten()
+                # rvec = np.array([[rvec]])
                 # print('id: ', local_ids[i], 'rvec: ', rvec, '\ntvec: ', tvec)
                 distance_from_rgb_list.append(tvec[0][0][2])
                 angle_aruco_list.append(rvec[0][0][2])
                 # Draw frame axes for each marker
-                cv2.drawFrameAxes(image, cam_mat, dist_mat, rvec, tvec, size_of_aruco_m, 5)
-
-    # Remove markers which are far away from the arm's reach
-    # for i in range(len(center_aruco_list)-1, -1, -1):
-    #     if distance_from_rgb_list[i] < 0.5:
-    #         center_aruco_list.remove(center_aruco_list[i])
-    #         distance_from_rgb_list.remove(distance_from_rgb_list[i])
-    #         angle_aruco_list.remove(angle_aruco_list[i])
-    #         width_aruco_list.remove(width_aruco_list[i])
-    #         ids.remove(ids[i])
+                cv2.drawFrameAxes(image, cam_mat, dist_mat, rvec, tvec, 0.5, 5)
     
     # Debugging
     # for i in range(len(center_aruco_list)):
@@ -277,7 +268,7 @@ class aruco_tf(Node):
         ############################################
 
         try:
-            self.depth_image = self.bridge.imgmsg_to_cv2(data, '16UC1')
+            self.depth_image = self.bridge.imgmsg_to_cv2(data, '32FC1')
 
             # Normalize the Image
             norm_depth_img = cv2.normalize(self.depth_image, None, 0, 255, cv2.NORM_MINMAX)
@@ -405,21 +396,20 @@ class aruco_tf(Node):
 
         center_aruco_list, distance_from_rgb_list, angle_aruco_list, width_aruco_list, ids = detect_aruco(self.cv_image)
 
-        for i in range(len(center_aruco_list)):
+        for i in range(len(ids)):
             angle_aruco = (0.788*angle_aruco_list[i]) - ((angle_aruco_list[i]**2)/3160)
 
-            roll = 0
-            pitch = 0
-            yaw = angle_aruco
-            q = tf_transformations.quaternion_from_euler(roll, pitch, yaw)
+            q = tf_transformations.quaternion_from_euler(0, 0, angle_aruco)
 
             # print(center_aruco_list[i])
 
-            distance_from_rgb = self.depth_image[int(center_aruco_list[i][1]), int(center_aruco_list[i][0])] / 1000
+            distance_from_rgb = self.depth_image[int(center_aruco_list[i][1]), int(center_aruco_list[i][0])] / 1000.0
 
             x = distance_from_rgb * (sizeCamX - center_aruco_list[i][0] - centerCamX) / focalX
             y = distance_from_rgb * (sizeCamY - center_aruco_list[i][1] - centerCamY) / focalY
             z = distance_from_rgb
+
+            # print('id: ', int(ids[i]), 'x: ', x, 'y: ', y, 'z: ', z)
 
             cv2.circle(self.cv_image, (int(center_aruco_list[i][0]), int(center_aruco_list[i][1])), 5, (100, 0, 100), -1)
 
@@ -429,9 +419,9 @@ class aruco_tf(Node):
             tempStamped.header.frame_id = 'camera_link'
             tempStamped.child_frame_id = f'cam_{int(ids[i])}'
 
-            tempStamped.transform.translation.x = x
-            tempStamped.transform.translation.y = y
-            tempStamped.transform.translation.z = z
+            tempStamped.transform.translation.x = z
+            tempStamped.transform.translation.y = x
+            tempStamped.transform.translation.z = y
             tempStamped.transform.rotation.x = q[0]
             tempStamped.transform.rotation.y = q[1]
             tempStamped.transform.rotation.z = q[2]
@@ -440,7 +430,7 @@ class aruco_tf(Node):
             self.br.sendTransform(tempStamped)
             
             try:
-                trans = self.tf_buffer.lookup_transform('camera_link', f'cam_{int(ids[i])}', rclpy.time.Time())
+                trans = self.tf_buffer.lookup_transform('base_link', f'cam_{int(ids[i])}', rclpy.time.Time())
             except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException):
                 print('DEAD')
                 continue
@@ -454,10 +444,13 @@ class aruco_tf(Node):
             tempStamped.transform.translation.x = trans.transform.translation.x
             tempStamped.transform.translation.y = trans.transform.translation.y
             tempStamped.transform.translation.z = trans.transform.translation.z
-            tempStamped.transform.rotation.x = trans.transform.rotation.x
-            tempStamped.transform.rotation.y = trans.transform.rotation.y
-            tempStamped.transform.rotation.z = trans.transform.rotation.z
-            tempStamped.transform.rotation.w = trans.transform.rotation.w
+
+            q = tf_transformations.quaternion_from_euler(np.pi/2, 0, -angle_aruco + np.pi/2)
+
+            tempStamped.transform.rotation.x = q[0]
+            tempStamped.transform.rotation.y = q[1]
+            tempStamped.transform.rotation.z = q[2]
+            tempStamped.transform.rotation.w = q[3]
 
             self.br.sendTransform(tempStamped)
 
