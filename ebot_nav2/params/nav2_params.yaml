@@ -1,12 +1,13 @@
 amcl:
   ros__parameters:
     use_sim_time: True
-    alpha1: 0.2
-    alpha2: 0.2
-    alpha3: 0.2
-    alpha4: 0.2
-    alpha5: 0.2
-    base_frame_id: "base_link"
+    # default value for any alpha: 0.2
+    alpha1: 0.0002 #Expected process noise in odometry’s rotation estimate from rotation.
+    alpha2: 0.0002 #Expected process noise in odometry’s rotation estimate from translation.
+    alpha3: 0.0001 #Expected process noise in odometry’s translation estimate from translation.
+    alpha4: 0.0001 #Expected process noise in odometry’s translation estimate from rotation.
+    alpha5: 0.0 #For Omni models only: translation noise.
+    base_frame_id: "base_footprint"
     beam_skip_distance: 0.5
     beam_skip_error_threshold: 0.9
     beam_skip_threshold: 0.3
@@ -40,12 +41,12 @@ amcl:
     scan_topic: scan
     map_topic: map
     set_initial_pose: True
-    always_reset_initial_pose: False
+    always_reset_initial_pose: True
     first_map_only: False
     initial_pose:
       x: 1.84
       y: -9.05
-      z: 0.1
+      z: 0.546
       yaw: 3.14
 
 amcl_map_client:
@@ -130,8 +131,8 @@ controller_server:
     general_goal_checker:
       stateful: True
       plugin: "nav2_controller::SimpleGoalChecker"
-      xy_goal_tolerance: 0.25
-      yaw_goal_tolerance: 0.25
+      xy_goal_tolerance: 0.3
+      yaw_goal_tolerance: 0.15
     # DWB parameters
     FollowPath:
       plugin: "dwb_core::DWBLocalPlanner"
@@ -160,7 +161,7 @@ controller_server:
       linear_granularity: 0.05
       angular_granularity: 0.025
       transform_tolerance: 0.2
-      xy_goal_tolerance: 0.25
+      xy_goal_tolerance: 0.3
       trans_stopped_velocity: 0.25
       short_circuit_trajectory_evaluation: True
       stateful: True
@@ -278,7 +279,7 @@ global_costmap:
 map_server:
   ros__parameters:
     use_sim_time: True
-    yaml_filename: "map_name.yaml"
+    yaml_filename: "map.yaml"
 
 map_saver:
   ros__parameters:
