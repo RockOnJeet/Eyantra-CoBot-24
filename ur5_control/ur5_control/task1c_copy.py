@@ -96,7 +96,7 @@ def move_to_joint_position(moveit2, node, joint_positions, position_name):
 
 def move_to_pose(moveit2, node, pose, position_name):
     node.get_logger().info(f"Moving to {position_name}: {pose.position.x}, {pose.position.y}, {pose.position.z}")
-    moveit2.move_to_pose(pose)
+    moveit2.move_to_pose(position = pose.position, quat_xyzw = pose.orientation)
     moveit2.wait_until_executed()
     node.get_logger().info(f"Reached {position_name}")
 
@@ -176,8 +176,7 @@ def main():
         pose.orientation.w = quat[3]
 
         # Move to the pose
-        # move_to_pose(moveit2, node, pose, step["position_name"])
-        moveit2.move_to_pose(pose)
+        move_to_pose(moveit2, node, pose, step["position_name"])
         do_gripper_action(node, step)
         move_to_joint_position(moveit2, node, D, "D")
         step["gripper_action"] = "detach"
