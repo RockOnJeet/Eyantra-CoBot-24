@@ -51,11 +51,11 @@ def lookup_multiple_transforms():
         rclpy.spin_once(node, timeout_sec=1.0)
 
 # Joint configurations
-A = [-0.47, -0.55, 1.29, -2.35, -1.55, 2.93]
-B = [0.36, -0.36, 0.90, -2.14, -1.55, 2.93]
-C = [-1.34, -1.58, 1.5, -2.95, -1.7, 3.1]
+# A = [-0.47, -0.55, 1.29, -2.35, -1.55, 2.93]
+# B = [0.36, -0.36, 0.90, -2.14, -1.55, 2.93]
+# C = [-1.34, -1.58, 1.5, -2.95, -1.7, 3.1]
 D = [0.01, -1.97, -0.97, -3.31, -1.69, 3.00]
-O = [0.0, -2.39, 2.40, -3.15, -1.57, 3.14]
+# O = [0.0, -2.39, 2.40, -3.15, -1.57, 3.14]
 
 def gripper_magnet_control(node, service_name, model1_name, operation):
     # Create service client
@@ -88,17 +88,27 @@ def gripper_magnet_control(node, service_name, model1_name, operation):
     else:
         node.get_logger().error(f'{operation.capitalize()} for {model1_name} failed')
 
-# def move_to_joint_position(moveit2, node, joint_positions, position_name):
-#     node.get_logger().info(f"Moving to {position_name}: {joint_positions}")
-#     moveit2.move_to_configuration(joint_positions)
-#     moveit2.wait_until_executed()
-#     node.get_logger().info(f"Reached {position_name}")
+def move_to_joint_position(moveit2, node, joint_positions, position_name):
+    node.get_logger().info(f"Moving to {position_name}: {joint_positions}")
+    moveit2.move_to_configuration(joint_positions)
+    moveit2.wait_until_executed()
+    node.get_logger().info(f"Reached {position_name}")
 
 def move_to_pose(moveit2, node, pose, position_name):
     node.get_logger().info(f"Moving to {position_name}: {pose.position.x}, {pose.position.y}, {pose.position.z}")
     moveit2.move_to_pose(pose)
     moveit2.wait_until_executed()
     node.get_logger().info(f"Reached {position_name}")
+
+def do_gripper_action(node, step):
+    # Perform gripper action if defined
+        if "gripper_action" in step and "box" in step:
+            if step["gripper_action"] == "attach":
+                node.get_logger().info(f"Attaching {step['box']} at {step['position_name']}")
+                gripper_magnet_control(node, "/GripperMagnetON", step["box"], "attach")
+            elif step["gripper_action"] == "detach":
+                node.get_logger().info(f"Detaching {step['box']} at {step['position_name']}")
+                gripper_magnet_control(node, "/GripperMagnetOFF", step["box"], "detach")
 
 def main():
     rclpy.init()
@@ -128,19 +138,19 @@ def main():
     # Define poses (translation + rotation) for the boxes
     box_poses = [
         {
-            "pose": {"position": [0.5, 0.2, 0.2], "orientation": [0, 0, 0]},  # Box 49
+            "pose": {"position": [0.2, -0.47, 0.65], "orientation": [0, 0, 0]},  # Box 49
             "position_name": "box49_pick",
             "gripper_action": "attach",
             "box": "box49"
         },
         {
-            "pose": {"position": [-0.3, -0.4, 0.1], "orientation": [0, 0, 1.57]},  # Box 3
+            "pose": {"position": [0.75, 0.49, -0.05], "orientation": [0, 0, 1.57]},  # Box 3
             "position_name": "box3_pick",
             "gripper_action": "attach",
             "box": "box3"
         },
         {
-            "pose": {"position": [0.4, 0.4, 0.3], "orientation": [0, 1.57, 0]},  # Box 1
+            "pose": {"position": [0.75, -0.23, -0.05], "orientation": [0, 1.57, 0]},  # Box 1
             "position_name": "box1_pick",
             "gripper_action": "attach",
             "box": "box1"
@@ -166,19 +176,15 @@ def main():
         pose.orientation.w = quat[3]
 
         # Move to the pose
-        move_to_pose(moveit2, node, pose, step["position_name"])
-
-        # Perform gripper action if defined
-        if "gripper_action" in step and "box" in step:
-            if step["gripper_action"] == "attach":
-                node.get_logger().info(f"Attaching {step['box']} at {step['position_name']}")
-                gripper_magnet_control(node, "/GripperMagnetON", step["box"], "attach")
-            elif step["gripper_action"] == "detach":
-                node.get_logger().info(f"Detaching {step['box']} at {step['position_name']}")
-                gripper_magnet_control(node, "/GripperMagnetOFF", step["box"], "detach")
+        # move_to_pose(moveit2, node, pose, step["position_name"])
+        moveit2.move_to_pose(pose)
+        do_gripper_action(node, step)
+        move_to_joint_position(moveit2, node, D, "D")
+        step["gripper_action"] = "detach"
+        do_gripper_action(node, step)
 
         # Add delay between moves if needed
-        rclpy.sleep(0)
+        # rclpy.sleep(0)
 
     # Shutdown ROS 2
     rclpy.shutdown()
