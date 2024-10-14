@@ -22,7 +22,8 @@ setup(
     entry_points={
         'console_scripts': [
         "task1b = ur5_control.task1b:main",
-        "task1c = ur5_control.task1c:main"
+        "task1c = ur5_control.task1c:main",
+        "task1c_copy = ur5_control.task1c_copy:main"
         ],
     },
 )
