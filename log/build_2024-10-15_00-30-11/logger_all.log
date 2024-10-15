@@ -1,0 +1,737 @@
+[0.134s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.134s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x73e92772c370>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73e927707c70>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73e927707c70>>)
+[0.349s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.350s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/soumyajit/Eyantra-CoBot-24/src'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.362s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_description) by extension 'ignore'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_description) by extension 'ignore_ament_install'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_description) by extensions ['colcon_pkg']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_description) by extension 'colcon_pkg'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_description) by extensions ['colcon_meta']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_description) by extension 'colcon_meta'
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_description) by extensions ['ros']
+[0.363s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_description) by extension 'ros'
+[0.365s] DEBUG:colcon.colcon_core.package_identification:Package 'ebot_description' with type 'ros.ament_cmake' and name 'ebot_description'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_nav2) by extensions ['ignore', 'ignore_ament_install']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_nav2) by extension 'ignore'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_nav2) by extension 'ignore_ament_install'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_nav2) by extensions ['colcon_pkg']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_nav2) by extension 'colcon_pkg'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_nav2) by extensions ['colcon_meta']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_nav2) by extension 'colcon_meta'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_nav2) by extensions ['ros']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(ebot_nav2) by extension 'ros'
+[0.366s] DEBUG:colcon.colcon_core.package_identification:Package 'ebot_nav2' with type 'ros.ament_cmake' and name 'ebot_nav2'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(eyantra_warehouse) by extensions ['ignore', 'ignore_ament_install']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(eyantra_warehouse) by extension 'ignore'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(eyantra_warehouse) by extension 'ignore_ament_install'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(eyantra_warehouse) by extensions ['colcon_pkg']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(eyantra_warehouse) by extension 'colcon_pkg'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(eyantra_warehouse) by extensions ['colcon_meta']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(eyantra_warehouse) by extension 'colcon_meta'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(eyantra_warehouse) by extensions ['ros']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(eyantra_warehouse) by extension 'ros'
+[0.367s] DEBUG:colcon.colcon_core.package_identification:Package 'eyantra_warehouse' with type 'ros.ament_cmake' and name 'eyantra_warehouse'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(linkattacher_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(linkattacher_msgs) by extension 'ignore'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(linkattacher_msgs) by extension 'ignore_ament_install'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(linkattacher_msgs) by extensions ['colcon_pkg']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(linkattacher_msgs) by extension 'colcon_pkg'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(linkattacher_msgs) by extensions ['colcon_meta']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(linkattacher_msgs) by extension 'colcon_meta'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(linkattacher_msgs) by extensions ['ros']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(linkattacher_msgs) by extension 'ros'
+[0.368s] DEBUG:colcon.colcon_core.package_identification:Package 'linkattacher_msgs' with type 'ros.ament_cmake' and name 'linkattacher_msgs'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(my_bag) by extensions ['ignore', 'ignore_ament_install']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(my_bag) by extension 'ignore'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(my_bag) by extension 'ignore_ament_install'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(my_bag) by extensions ['colcon_pkg']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(my_bag) by extension 'colcon_pkg'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(my_bag) by extensions ['colcon_meta']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(my_bag) by extension 'colcon_meta'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(my_bag) by extensions ['ros']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(my_bag) by extension 'ros'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(my_bag) by extensions ['cmake', 'python']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(my_bag) by extension 'cmake'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(my_bag) by extension 'python'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(my_bag) by extensions ['python_setup_py']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(my_bag) by extension 'python_setup_py'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extensions ['ignore', 'ignore_ament_install']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extension 'ignore'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extension 'ignore_ament_install'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extensions ['colcon_pkg']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extension 'colcon_pkg'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extensions ['colcon_meta']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extension 'colcon_meta'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extensions ['ros']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(pymoveit2) by extension 'ros'
+[0.370s] DEBUG:colcon.colcon_core.package_identification:Package 'pymoveit2' with type 'ros.ament_cmake' and name 'pymoveit2'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(realsense_gazebo_plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(realsense_gazebo_plugin) by extension 'ignore'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(realsense_gazebo_plugin) by extension 'ignore_ament_install'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(realsense_gazebo_plugin) by extensions ['colcon_pkg']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(realsense_gazebo_plugin) by extension 'colcon_pkg'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(realsense_gazebo_plugin) by extensions ['colcon_meta']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(realsense_gazebo_plugin) by extension 'colcon_meta'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(realsense_gazebo_plugin) by extensions ['ros']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(realsense_gazebo_plugin) by extension 'ros'
+[0.370s] DEBUG:colcon.colcon_core.package_identification:Package 'realsense_gazebo_plugin' with type 'ros.ament_cmake' and name 'realsense_gazebo_plugin'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_control) by extensions ['ignore', 'ignore_ament_install']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_control) by extension 'ignore'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_control) by extension 'ignore_ament_install'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_control) by extensions ['colcon_pkg']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_control) by extension 'colcon_pkg'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_control) by extensions ['colcon_meta']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_control) by extension 'colcon_meta'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_control) by extensions ['ros']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur5_control) by extension 'ros'
+[0.371s] DEBUG:colcon.colcon_core.package_identification:Package 'ur5_control' with type 'ros.ament_python' and name 'ur5_control'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur_description) by extensions ['ignore', 'ignore_ament_install']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur_description) by extension 'ignore'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur_description) by extension 'ignore_ament_install'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur_description) by extensions ['colcon_pkg']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur_description) by extension 'colcon_pkg'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur_description) by extensions ['colcon_meta']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur_description) by extension 'colcon_meta'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur_description) by extensions ['ros']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(ur_description) by extension 'ros'
+[0.373s] DEBUG:colcon.colcon_core.package_identification:Package 'ur_description' with type 'ros.ament_cmake' and name 'ur_description'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(ur_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(ur_moveit_config) by extension 'ignore'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(ur_moveit_config) by extension 'ignore_ament_install'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(ur_moveit_config) by extensions ['colcon_pkg']
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(ur_moveit_config) by extension 'colcon_pkg'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(ur_moveit_config) by extensions ['colcon_meta']
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(ur_moveit_config) by extension 'colcon_meta'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(ur_moveit_config) by extensions ['ros']
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(ur_moveit_config) by extension 'ros'
+[0.374s] DEBUG:colcon.colcon_core.package_identification:Package 'ur_moveit_config' with type 'ros.ament_cmake' and name 'ur_moveit_config'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(ur_simulation_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(ur_simulation_gazebo) by extension 'ignore'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(ur_simulation_gazebo) by extension 'ignore_ament_install'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(ur_simulation_gazebo) by extensions ['colcon_pkg']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(ur_simulation_gazebo) by extension 'colcon_pkg'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(ur_simulation_gazebo) by extensions ['colcon_meta']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(ur_simulation_gazebo) by extension 'colcon_meta'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(ur_simulation_gazebo) by extensions ['ros']
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(ur_simulation_gazebo) by extension 'ros'
+[0.376s] DEBUG:colcon.colcon_core.package_identification:Package 'ur_simulation_gazebo' with type 'ros.ament_cmake' and name 'ur_simulation_gazebo'
+[0.376s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.376s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.376s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.376s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.376s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.417s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.417s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.420s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 10 installed packages in /home/soumyajit/Eyantra-CoBot-24/install
+[0.422s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 444 installed packages in /opt/ros/humble
+[0.424s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.471s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'ur_description' is in: /home/soumyajit/Eyantra-CoBot-24/install/ur_description, /opt/ros/humble
+	'ur_moveit_config' is in: /home/soumyajit/Eyantra-CoBot-24/install/ur_moveit_config, /opt/ros/humble
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding ur_description ur_moveit_config
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_description' build argument 'cmake_args' from command line to 'None'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_description' build argument 'cmake_target' from command line to 'None'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.473s] DEBUG:colcon.colcon_core.verb:Building package 'ebot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description', 'merge_install': False, 'path': '/home/soumyajit/Eyantra-CoBot-24/src/ebot_description', 'symlink_install': False, 'test_result_base': None}
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_nav2' build argument 'cmake_args' from command line to 'None'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_nav2' build argument 'cmake_target' from command line to 'None'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_nav2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_nav2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_nav2' build argument 'cmake_clean_first' from command line to 'False'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_nav2' build argument 'cmake_force_configure' from command line to 'False'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_nav2' build argument 'ament_cmake_args' from command line to 'None'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_nav2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'ebot_nav2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.473s] DEBUG:colcon.colcon_core.verb:Building package 'ebot_nav2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_nav2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2', 'merge_install': False, 'path': '/home/soumyajit/Eyantra-CoBot-24/src/ebot_nav2', 'symlink_install': False, 'test_result_base': None}
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'eyantra_warehouse' build argument 'cmake_args' from command line to 'None'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'eyantra_warehouse' build argument 'cmake_target' from command line to 'None'
+[0.473s] Level 5:colcon.colcon_core.verb:set package 'eyantra_warehouse' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'eyantra_warehouse' build argument 'cmake_clean_cache' from command line to 'False'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'eyantra_warehouse' build argument 'cmake_clean_first' from command line to 'False'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'eyantra_warehouse' build argument 'cmake_force_configure' from command line to 'False'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'eyantra_warehouse' build argument 'ament_cmake_args' from command line to 'None'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'eyantra_warehouse' build argument 'catkin_cmake_args' from command line to 'None'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'eyantra_warehouse' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.474s] DEBUG:colcon.colcon_core.verb:Building package 'eyantra_warehouse' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/soumyajit/Eyantra-CoBot-24/src/build/eyantra_warehouse', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse', 'merge_install': False, 'path': '/home/soumyajit/Eyantra-CoBot-24/src/eyantra_warehouse', 'symlink_install': False, 'test_result_base': None}
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'cmake_args' from command line to 'None'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'cmake_target' from command line to 'None'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'linkattacher_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.474s] DEBUG:colcon.colcon_core.verb:Building package 'linkattacher_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/soumyajit/Eyantra-CoBot-24/src/build/linkattacher_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs', 'merge_install': False, 'path': '/home/soumyajit/Eyantra-CoBot-24/src/linkattacher_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_args' from command line to 'None'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_target' from command line to 'None'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_clean_first' from command line to 'False'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'cmake_force_configure' from command line to 'False'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'ament_cmake_args' from command line to 'None'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.474s] Level 5:colcon.colcon_core.verb:set package 'pymoveit2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.474s] DEBUG:colcon.colcon_core.verb:Building package 'pymoveit2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2', 'merge_install': False, 'path': '/home/soumyajit/Eyantra-CoBot-24/src/pymoveit2', 'symlink_install': False, 'test_result_base': None}
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_args' from command line to 'None'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_target' from command line to 'None'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_clean_cache' from command line to 'False'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_clean_first' from command line to 'False'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_force_configure' from command line to 'False'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'ament_cmake_args' from command line to 'None'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'catkin_cmake_args' from command line to 'None'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.475s] DEBUG:colcon.colcon_core.verb:Building package 'realsense_gazebo_plugin' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/soumyajit/Eyantra-CoBot-24/src/build/realsense_gazebo_plugin', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin', 'merge_install': False, 'path': '/home/soumyajit/Eyantra-CoBot-24/src/realsense_gazebo_plugin', 'symlink_install': False, 'test_result_base': None}
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'ur5_control' build argument 'cmake_args' from command line to 'None'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'ur5_control' build argument 'cmake_target' from command line to 'None'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'ur5_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'ur5_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'ur5_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'ur5_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'ur5_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'ur5_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'ur5_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.475s] DEBUG:colcon.colcon_core.verb:Building package 'ur5_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/soumyajit/Eyantra-CoBot-24/src/build/ur5_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control', 'merge_install': False, 'path': '/home/soumyajit/Eyantra-CoBot-24/src/ur5_control', 'symlink_install': False, 'test_result_base': None}
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_args' from command line to 'None'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_target' from command line to 'None'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.475s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.476s] DEBUG:colcon.colcon_core.verb:Building package 'ur_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description', 'merge_install': False, 'path': '/home/soumyajit/Eyantra-CoBot-24/src/ur_description', 'symlink_install': False, 'test_result_base': None}
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_moveit_config' build argument 'cmake_args' from command line to 'None'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_moveit_config' build argument 'cmake_target' from command line to 'None'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_moveit_config' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_moveit_config' build argument 'cmake_clean_cache' from command line to 'False'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_moveit_config' build argument 'cmake_clean_first' from command line to 'False'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_moveit_config' build argument 'cmake_force_configure' from command line to 'False'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_moveit_config' build argument 'ament_cmake_args' from command line to 'None'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_moveit_config' build argument 'catkin_cmake_args' from command line to 'None'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_moveit_config' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.476s] DEBUG:colcon.colcon_core.verb:Building package 'ur_moveit_config' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_moveit_config', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config', 'merge_install': False, 'path': '/home/soumyajit/Eyantra-CoBot-24/src/ur_moveit_config', 'symlink_install': False, 'test_result_base': None}
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.476s] Level 5:colcon.colcon_core.verb:set package 'ur_simulation_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.476s] DEBUG:colcon.colcon_core.verb:Building package 'ur_simulation_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_simulation_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo', 'merge_install': False, 'path': '/home/soumyajit/Eyantra-CoBot-24/src/ur_simulation_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.476s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.477s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.478s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/soumyajit/Eyantra-CoBot-24/src/ur_description' with build type 'ament_cmake'
+[0.478s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/soumyajit/Eyantra-CoBot-24/src/ur_description'
+[0.481s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.481s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.481s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.485s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/soumyajit/Eyantra-CoBot-24/src/ebot_description' with build type 'ament_cmake'
+[0.485s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/soumyajit/Eyantra-CoBot-24/src/ebot_description'
+[0.486s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.486s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.489s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/soumyajit/Eyantra-CoBot-24/src/ebot_nav2' with build type 'ament_cmake'
+[0.490s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/soumyajit/Eyantra-CoBot-24/src/ebot_nav2'
+[0.490s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.490s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.494s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/soumyajit/Eyantra-CoBot-24/src/eyantra_warehouse' with build type 'ament_cmake'
+[0.494s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/soumyajit/Eyantra-CoBot-24/src/eyantra_warehouse'
+[0.495s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.495s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.499s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/soumyajit/Eyantra-CoBot-24/src/linkattacher_msgs' with build type 'ament_cmake'
+[0.499s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/soumyajit/Eyantra-CoBot-24/src/linkattacher_msgs'
+[0.499s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.499s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.504s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/soumyajit/Eyantra-CoBot-24/src/pymoveit2' with build type 'ament_cmake'
+[0.504s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/soumyajit/Eyantra-CoBot-24/src/pymoveit2'
+[0.505s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.505s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.508s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/soumyajit/Eyantra-CoBot-24/src/realsense_gazebo_plugin' with build type 'ament_cmake'
+[0.508s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/soumyajit/Eyantra-CoBot-24/src/realsense_gazebo_plugin'
+[0.509s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.509s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.512s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/soumyajit/Eyantra-CoBot-24/src/ur5_control' with build type 'ament_python'
+[0.513s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur5_control', 'ament_prefix_path')
+[0.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/share/ur5_control/hook/ament_prefix_path.ps1'
+[0.514s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/share/ur5_control/hook/ament_prefix_path.dsv'
+[0.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/share/ur5_control/hook/ament_prefix_path.sh'
+[0.515s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.515s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/ur_description -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description
+[0.528s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/ebot_description -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description
+[0.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/ebot_nav2 -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2
+[0.534s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/eyantra_warehouse': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/eyantra_warehouse -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse
+[0.536s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/linkattacher_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/linkattacher_msgs -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs
+[0.540s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/pymoveit2 -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2
+[0.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/realsense_gazebo_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/realsense_gazebo_plugin -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin
+[0.849s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/soumyajit/Eyantra-CoBot-24/src/ur5_control'
+[0.849s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.849s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.540s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/ur5_control': PYTHONPATH=/home/soumyajit/Eyantra-CoBot-24/src/build/ur5_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/ur5_control build --build-base /home/soumyajit/Eyantra-CoBot-24/src/build/ur5_control/build install --record /home/soumyajit/Eyantra-CoBot-24/src/build/ur5_control/install.log --single-version-externally-managed install_data
+[1.622s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/pymoveit2 -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2
+[1.625s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2 -- -j12 -l12
+[1.684s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/eyantra_warehouse' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/eyantra_warehouse -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse
+[1.689s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/eyantra_warehouse': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/eyantra_warehouse -- -j12 -l12
+[1.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/eyantra_warehouse' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/eyantra_warehouse -- -j12 -l12
+[1.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/eyantra_warehouse': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/eyantra_warehouse
+[2.017s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/ur5_control' returned '0': PYTHONPATH=/home/soumyajit/Eyantra-CoBot-24/src/build/ur5_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/ur5_control build --build-base /home/soumyajit/Eyantra-CoBot-24/src/build/ur5_control/build install --record /home/soumyajit/Eyantra-CoBot-24/src/build/ur5_control/install.log --single-version-externally-managed install_data
+[2.023s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control' for CMake module files
+[2.024s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control' for CMake config files
+[2.025s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/lib'
+[2.026s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/bin'
+[2.026s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/lib/pkgconfig/ur5_control.pc'
+[2.026s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/lib/python3.10/site-packages'
+[2.026s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur5_control', 'pythonpath')
+[2.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/share/ur5_control/hook/pythonpath.ps1'
+[2.027s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/share/ur5_control/hook/pythonpath.dsv'
+[2.028s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/share/ur5_control/hook/pythonpath.sh'
+[2.029s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/bin'
+[2.029s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur5_control)
+[2.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/share/ur5_control/package.ps1'
+[2.032s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/share/ur5_control/package.dsv'
+[2.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/share/ur5_control/package.sh'
+[2.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/share/ur5_control/package.bash'
+[2.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/share/ur5_control/package.zsh'
+[2.040s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/ur5_control/share/colcon-core/packages/ur5_control)
+[2.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2 -- -j12 -l12
+[2.117s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(eyantra_warehouse)
+[2.118s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse' for CMake module files
+[2.119s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/eyantra_warehouse' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/eyantra_warehouse
+[2.119s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse' for CMake config files
+[2.119s] Level 1:colcon.colcon_core.shell:create_environment_hook('eyantra_warehouse', 'cmake_prefix_path')
+[2.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/eyantra_warehouse/hook/cmake_prefix_path.ps1'
+[2.121s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/eyantra_warehouse/hook/cmake_prefix_path.dsv'
+[2.121s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/eyantra_warehouse/hook/cmake_prefix_path.sh'
+[2.122s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/bin'
+[2.122s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/lib/pkgconfig/eyantra_warehouse.pc'
+[2.122s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/lib/python3.10/site-packages'
+[2.123s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/bin'
+[2.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/eyantra_warehouse/package.ps1'
+[2.124s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/eyantra_warehouse/package.dsv'
+[2.125s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/eyantra_warehouse/package.sh'
+[2.125s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/eyantra_warehouse/package.bash'
+[2.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/eyantra_warehouse/package.zsh'
+[2.126s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/colcon-core/packages/eyantra_warehouse)
+[2.142s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2
+[2.157s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(eyantra_warehouse)
+[2.157s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse' for CMake module files
+[2.158s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse' for CMake config files
+[2.158s] Level 1:colcon.colcon_core.shell:create_environment_hook('eyantra_warehouse', 'cmake_prefix_path')
+[2.159s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/eyantra_warehouse/hook/cmake_prefix_path.ps1'
+[2.160s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/eyantra_warehouse/hook/cmake_prefix_path.dsv'
+[2.160s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/eyantra_warehouse/hook/cmake_prefix_path.sh'
+[2.161s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/bin'
+[2.161s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/lib/pkgconfig/eyantra_warehouse.pc'
+[2.161s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/lib/python3.10/site-packages'
+[2.162s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/bin'
+[2.162s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/eyantra_warehouse/package.ps1'
+[2.163s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/eyantra_warehouse/package.dsv'
+[2.163s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/eyantra_warehouse/package.sh'
+[2.164s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/eyantra_warehouse/package.bash'
+[2.165s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/eyantra_warehouse/package.zsh'
+[2.166s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/eyantra_warehouse/share/colcon-core/packages/eyantra_warehouse)
+[2.230s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pymoveit2)
+[2.230s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2' for CMake module files
+[2.231s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2
+[2.231s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2' for CMake config files
+[2.232s] Level 1:colcon.colcon_core.shell:create_environment_hook('pymoveit2', 'cmake_prefix_path')
+[2.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.ps1'
+[2.233s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.dsv'
+[2.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.sh'
+[2.235s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib'
+[2.235s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/bin'
+[2.235s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/pkgconfig/pymoveit2.pc'
+[2.235s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/python3.10/site-packages'
+[2.236s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/bin'
+[2.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/package.ps1'
+[2.237s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/package.dsv'
+[2.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/package.sh'
+[2.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/package.bash'
+[2.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/package.zsh'
+[2.239s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/colcon-core/packages/pymoveit2)
+[2.269s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pymoveit2)
+[2.269s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2' for CMake module files
+[2.270s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2' for CMake config files
+[2.270s] Level 1:colcon.colcon_core.shell:create_environment_hook('pymoveit2', 'cmake_prefix_path')
+[2.270s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.ps1'
+[2.271s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.dsv'
+[2.271s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/hook/cmake_prefix_path.sh'
+[2.272s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib'
+[2.272s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/bin'
+[2.272s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/pkgconfig/pymoveit2.pc'
+[2.272s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/python3.10/site-packages'
+[2.273s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/bin'
+[2.273s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/package.ps1'
+[2.273s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/package.dsv'
+[2.274s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/package.sh'
+[2.274s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/package.bash'
+[2.275s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/package.zsh'
+[2.275s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/colcon-core/packages/pymoveit2)
+[2.423s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_nav2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/ebot_nav2 -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2
+[2.426s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/ebot_nav2 -- -j12 -l12
+[2.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/ebot_description -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description
+[2.430s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description -- -j12 -l12
+[2.471s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_nav2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/ebot_nav2 -- -j12 -l12
+[2.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description -- -j12 -l12
+[2.496s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_nav2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/ebot_nav2
+[2.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description
+[2.539s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/ur_description -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description
+[2.542s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/ur_description -- -j12 -l12
+[2.543s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ebot_nav2)
+[2.544s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2' for CMake module files
+[2.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_nav2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/ebot_nav2
+[2.545s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2' for CMake config files
+[2.545s] Level 1:colcon.colcon_core.shell:create_environment_hook('ebot_nav2', 'cmake_prefix_path')
+[2.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/ebot_nav2/hook/cmake_prefix_path.ps1'
+[2.546s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/ebot_nav2/hook/cmake_prefix_path.dsv'
+[2.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/ebot_nav2/hook/cmake_prefix_path.sh'
+[2.547s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/bin'
+[2.547s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/lib/pkgconfig/ebot_nav2.pc'
+[2.548s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/lib/python3.10/site-packages'
+[2.548s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/bin'
+[2.548s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/ebot_nav2/package.ps1'
+[2.549s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/ebot_nav2/package.dsv'
+[2.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/ebot_nav2/package.sh'
+[2.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/ebot_nav2/package.bash'
+[2.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/ebot_nav2/package.zsh'
+[2.551s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/colcon-core/packages/ebot_nav2)
+[2.573s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ebot_nav2)
+[2.573s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2' for CMake module files
+[2.574s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2' for CMake config files
+[2.574s] Level 1:colcon.colcon_core.shell:create_environment_hook('ebot_nav2', 'cmake_prefix_path')
+[2.574s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/ebot_nav2/hook/cmake_prefix_path.ps1'
+[2.575s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/ebot_nav2/hook/cmake_prefix_path.dsv'
+[2.575s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/ebot_nav2/hook/cmake_prefix_path.sh'
+[2.576s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/bin'
+[2.576s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/lib/pkgconfig/ebot_nav2.pc'
+[2.576s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/lib/python3.10/site-packages'
+[2.577s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/bin'
+[2.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/ebot_nav2/package.ps1'
+[2.579s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/ebot_nav2/package.dsv'
+[2.580s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/ebot_nav2/package.sh'
+[2.580s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/ebot_nav2/package.bash'
+[2.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/ebot_nav2/package.zsh'
+[2.581s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_nav2/share/colcon-core/packages/ebot_nav2)
+[2.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/ur_description -- -j12 -l12
+[2.609s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/ur_description
+[2.615s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ebot_description)
+[2.615s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description' for CMake module files
+[2.616s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description
+[2.616s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description' for CMake config files
+[2.617s] Level 1:colcon.colcon_core.shell:create_environment_hook('ebot_description', 'cmake_prefix_path')
+[2.617s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/hook/cmake_prefix_path.ps1'
+[2.618s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/hook/cmake_prefix_path.dsv'
+[2.618s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/hook/cmake_prefix_path.sh'
+[2.619s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/bin'
+[2.619s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/lib/pkgconfig/ebot_description.pc'
+[2.619s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/lib/python3.10/site-packages'
+[2.620s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/bin'
+[2.620s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/package.ps1'
+[2.622s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/package.dsv'
+[2.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/package.sh'
+[2.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/package.bash'
+[2.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/package.zsh'
+[2.628s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/colcon-core/packages/ebot_description)
+[2.656s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ebot_description)
+[2.656s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description' for CMake module files
+[2.657s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description' for CMake config files
+[2.657s] Level 1:colcon.colcon_core.shell:create_environment_hook('ebot_description', 'cmake_prefix_path')
+[2.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/hook/cmake_prefix_path.ps1'
+[2.658s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/hook/cmake_prefix_path.dsv'
+[2.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/hook/cmake_prefix_path.sh'
+[2.660s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/bin'
+[2.660s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/lib/pkgconfig/ebot_description.pc'
+[2.660s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/lib/python3.10/site-packages'
+[2.661s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/bin'
+[2.661s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/package.ps1'
+[2.662s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/package.dsv'
+[2.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/package.sh'
+[2.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/package.bash'
+[2.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/package.zsh'
+[2.667s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/colcon-core/packages/ebot_description)
+[2.832s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/linkattacher_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/linkattacher_msgs -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs
+[2.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/linkattacher_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/linkattacher_msgs -- -j12 -l12
+[2.842s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_description)
+[2.842s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description' for CMake module files
+[2.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/ur_description
+[2.843s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description' for CMake config files
+[2.844s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_description', 'cmake_prefix_path')
+[2.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/ur_description/hook/cmake_prefix_path.ps1'
+[2.845s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/ur_description/hook/cmake_prefix_path.dsv'
+[2.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/ur_description/hook/cmake_prefix_path.sh'
+[2.846s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/lib'
+[2.846s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/bin'
+[2.846s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/lib/pkgconfig/ur_description.pc'
+[2.846s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/lib/python3.10/site-packages'
+[2.846s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/bin'
+[2.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/ur_description/package.ps1'
+[2.847s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/ur_description/package.dsv'
+[2.847s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/ur_description/package.sh'
+[2.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/ur_description/package.bash'
+[2.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/ur_description/package.zsh'
+[2.849s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/colcon-core/packages/ur_description)
+[2.875s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_description)
+[2.876s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description' for CMake module files
+[2.877s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description' for CMake config files
+[2.877s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_description', 'cmake_prefix_path')
+[2.878s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/ur_description/hook/cmake_prefix_path.ps1'
+[2.879s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/ur_description/hook/cmake_prefix_path.dsv'
+[2.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/ur_description/hook/cmake_prefix_path.sh'
+[2.880s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/lib'
+[2.880s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/bin'
+[2.881s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/lib/pkgconfig/ur_description.pc'
+[2.881s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/lib/python3.10/site-packages'
+[2.881s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/bin'
+[2.882s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/ur_description/package.ps1'
+[2.883s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/ur_description/package.dsv'
+[2.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/ur_description/package.sh'
+[2.884s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/ur_description/package.bash'
+[2.885s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/ur_description/package.zsh'
+[2.885s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description/share/colcon-core/packages/ur_description)
+[2.886s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/soumyajit/Eyantra-CoBot-24/src/ur_moveit_config' with build type 'ament_cmake'
+[2.886s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/soumyajit/Eyantra-CoBot-24/src/ur_moveit_config'
+[2.887s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.887s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_moveit_config': AMENT_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/ur_simulation_gazebo:/home/soumyajit/Eyantra-CoBot-24/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/realsense_gazebo_plugin:/home/soumyajit/Eyantra-CoBot-24/install/pymoveit2:/home/soumyajit/Eyantra-CoBot-24/install/linkattacher_msgs:/home/soumyajit/Eyantra-CoBot-24/install/eyantra_warehouse:/home/soumyajit/Eyantra-CoBot-24/install/ebot_nav2:/home/soumyajit/Eyantra-CoBot-24/install/ebot_description:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/ur_moveit_config -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config
+[3.670s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/ur_simulation_gazebo:/home/soumyajit/Eyantra-CoBot-24/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/realsense_gazebo_plugin:/home/soumyajit/Eyantra-CoBot-24/install/pymoveit2:/home/soumyajit/Eyantra-CoBot-24/install/linkattacher_msgs:/home/soumyajit/Eyantra-CoBot-24/install/eyantra_warehouse:/home/soumyajit/Eyantra-CoBot-24/install/ebot_nav2:/home/soumyajit/Eyantra-CoBot-24/install/ebot_description:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/ur_moveit_config -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config
+[3.671s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_moveit_config': AMENT_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/ur_simulation_gazebo:/home/soumyajit/Eyantra-CoBot-24/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/realsense_gazebo_plugin:/home/soumyajit/Eyantra-CoBot-24/install/pymoveit2:/home/soumyajit/Eyantra-CoBot-24/install/linkattacher_msgs:/home/soumyajit/Eyantra-CoBot-24/install/eyantra_warehouse:/home/soumyajit/Eyantra-CoBot-24/install/ebot_nav2:/home/soumyajit/Eyantra-CoBot-24/install/ebot_description:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/ur_moveit_config -- -j12 -l12
+[3.724s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/ur_simulation_gazebo:/home/soumyajit/Eyantra-CoBot-24/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/realsense_gazebo_plugin:/home/soumyajit/Eyantra-CoBot-24/install/pymoveit2:/home/soumyajit/Eyantra-CoBot-24/install/linkattacher_msgs:/home/soumyajit/Eyantra-CoBot-24/install/eyantra_warehouse:/home/soumyajit/Eyantra-CoBot-24/install/ebot_nav2:/home/soumyajit/Eyantra-CoBot-24/install/ebot_description:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/ur_moveit_config -- -j12 -l12
+[3.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_moveit_config': AMENT_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/ur_simulation_gazebo:/home/soumyajit/Eyantra-CoBot-24/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/realsense_gazebo_plugin:/home/soumyajit/Eyantra-CoBot-24/install/pymoveit2:/home/soumyajit/Eyantra-CoBot-24/install/linkattacher_msgs:/home/soumyajit/Eyantra-CoBot-24/install/eyantra_warehouse:/home/soumyajit/Eyantra-CoBot-24/install/ebot_nav2:/home/soumyajit/Eyantra-CoBot-24/install/ebot_description:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/ur_moveit_config
+[3.777s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_moveit_config)
+[3.777s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/ur_simulation_gazebo:/home/soumyajit/Eyantra-CoBot-24/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/realsense_gazebo_plugin:/home/soumyajit/Eyantra-CoBot-24/install/pymoveit2:/home/soumyajit/Eyantra-CoBot-24/install/linkattacher_msgs:/home/soumyajit/Eyantra-CoBot-24/install/eyantra_warehouse:/home/soumyajit/Eyantra-CoBot-24/install/ebot_nav2:/home/soumyajit/Eyantra-CoBot-24/install/ebot_description:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/ur_moveit_config
+[3.778s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config' for CMake module files
+[3.778s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config' for CMake config files
+[3.778s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_moveit_config', 'cmake_prefix_path')
+[3.779s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/ur_moveit_config/hook/cmake_prefix_path.ps1'
+[3.779s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/ur_moveit_config/hook/cmake_prefix_path.dsv'
+[3.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/ur_moveit_config/hook/cmake_prefix_path.sh'
+[3.780s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/bin'
+[3.780s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/lib/pkgconfig/ur_moveit_config.pc'
+[3.780s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/lib/python3.10/site-packages'
+[3.781s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/bin'
+[3.781s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/ur_moveit_config/package.ps1'
+[3.781s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/ur_moveit_config/package.dsv'
+[3.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/ur_moveit_config/package.sh'
+[3.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/ur_moveit_config/package.bash'
+[3.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/ur_moveit_config/package.zsh'
+[3.783s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/colcon-core/packages/ur_moveit_config)
+[3.817s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_moveit_config)
+[3.817s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config' for CMake module files
+[3.819s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config' for CMake config files
+[3.819s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_moveit_config', 'cmake_prefix_path')
+[3.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/ur_moveit_config/hook/cmake_prefix_path.ps1'
+[3.820s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/ur_moveit_config/hook/cmake_prefix_path.dsv'
+[3.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/ur_moveit_config/hook/cmake_prefix_path.sh'
+[3.821s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/bin'
+[3.821s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/lib/pkgconfig/ur_moveit_config.pc'
+[3.822s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/lib/python3.10/site-packages'
+[3.822s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/bin'
+[3.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/ur_moveit_config/package.ps1'
+[3.823s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/ur_moveit_config/package.dsv'
+[3.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/ur_moveit_config/package.sh'
+[3.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/ur_moveit_config/package.bash'
+[3.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/ur_moveit_config/package.zsh'
+[3.825s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config/share/colcon-core/packages/ur_moveit_config)
+[3.826s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/soumyajit/Eyantra-CoBot-24/src/ur_simulation_gazebo' with build type 'ament_cmake'
+[3.826s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/soumyajit/Eyantra-CoBot-24/src/ur_simulation_gazebo'
+[3.826s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.827s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.835s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/realsense_gazebo_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/realsense_gazebo_plugin -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin
+[3.837s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/realsense_gazebo_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/realsense_gazebo_plugin -- -j12 -l12
+[3.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_simulation_gazebo': AMENT_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/ur_simulation_gazebo:/home/soumyajit/Eyantra-CoBot-24/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/realsense_gazebo_plugin:/home/soumyajit/Eyantra-CoBot-24/install/pymoveit2:/home/soumyajit/Eyantra-CoBot-24/install/linkattacher_msgs:/home/soumyajit/Eyantra-CoBot-24/install/eyantra_warehouse:/home/soumyajit/Eyantra-CoBot-24/install/ebot_nav2:/home/soumyajit/Eyantra-CoBot-24/install/ebot_description:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/ur_simulation_gazebo -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo
+[4.949s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_simulation_gazebo' returned '0': AMENT_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/ur_simulation_gazebo:/home/soumyajit/Eyantra-CoBot-24/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/realsense_gazebo_plugin:/home/soumyajit/Eyantra-CoBot-24/install/pymoveit2:/home/soumyajit/Eyantra-CoBot-24/install/linkattacher_msgs:/home/soumyajit/Eyantra-CoBot-24/install/eyantra_warehouse:/home/soumyajit/Eyantra-CoBot-24/install/ebot_nav2:/home/soumyajit/Eyantra-CoBot-24/install/ebot_description:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/ur_simulation_gazebo -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo
+[4.952s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_simulation_gazebo': AMENT_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/ur_simulation_gazebo:/home/soumyajit/Eyantra-CoBot-24/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/realsense_gazebo_plugin:/home/soumyajit/Eyantra-CoBot-24/install/pymoveit2:/home/soumyajit/Eyantra-CoBot-24/install/linkattacher_msgs:/home/soumyajit/Eyantra-CoBot-24/install/eyantra_warehouse:/home/soumyajit/Eyantra-CoBot-24/install/ebot_nav2:/home/soumyajit/Eyantra-CoBot-24/install/ebot_description:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/ur_simulation_gazebo -- -j12 -l12
+[4.999s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_simulation_gazebo' returned '0': AMENT_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/ur_simulation_gazebo:/home/soumyajit/Eyantra-CoBot-24/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/realsense_gazebo_plugin:/home/soumyajit/Eyantra-CoBot-24/install/pymoveit2:/home/soumyajit/Eyantra-CoBot-24/install/linkattacher_msgs:/home/soumyajit/Eyantra-CoBot-24/install/eyantra_warehouse:/home/soumyajit/Eyantra-CoBot-24/install/ebot_nav2:/home/soumyajit/Eyantra-CoBot-24/install/ebot_description:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/ur_simulation_gazebo -- -j12 -l12
+[5.032s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_simulation_gazebo': AMENT_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/ur_simulation_gazebo:/home/soumyajit/Eyantra-CoBot-24/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/realsense_gazebo_plugin:/home/soumyajit/Eyantra-CoBot-24/install/pymoveit2:/home/soumyajit/Eyantra-CoBot-24/install/linkattacher_msgs:/home/soumyajit/Eyantra-CoBot-24/install/eyantra_warehouse:/home/soumyajit/Eyantra-CoBot-24/install/ebot_nav2:/home/soumyajit/Eyantra-CoBot-24/install/ebot_description:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/ur_simulation_gazebo
+[5.058s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_simulation_gazebo)
+[5.059s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo' for CMake module files
+[5.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ur_simulation_gazebo' returned '0': AMENT_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/soumyajit/Eyantra-CoBot-24/src/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/src/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/ur_simulation_gazebo:/home/soumyajit/Eyantra-CoBot-24/install/ur_moveit_config:/home/soumyajit/Eyantra-CoBot-24/install/ur_description:/home/soumyajit/Eyantra-CoBot-24/install/realsense_gazebo_plugin:/home/soumyajit/Eyantra-CoBot-24/install/pymoveit2:/home/soumyajit/Eyantra-CoBot-24/install/linkattacher_msgs:/home/soumyajit/Eyantra-CoBot-24/install/eyantra_warehouse:/home/soumyajit/Eyantra-CoBot-24/install/ebot_nav2:/home/soumyajit/Eyantra-CoBot-24/install/ebot_description:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/ur_simulation_gazebo
+[5.061s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo' for CMake config files
+[5.061s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_simulation_gazebo', 'cmake_prefix_path')
+[5.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.ps1'
+[5.062s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.dsv'
+[5.063s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.sh'
+[5.064s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/bin'
+[5.064s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/lib/pkgconfig/ur_simulation_gazebo.pc'
+[5.065s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/lib/python3.10/site-packages'
+[5.065s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/bin'
+[5.066s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.ps1'
+[5.067s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.dsv'
+[5.068s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.sh'
+[5.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.bash'
+[5.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.zsh'
+[5.070s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/colcon-core/packages/ur_simulation_gazebo)
+[5.097s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_simulation_gazebo)
+[5.097s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo' for CMake module files
+[5.098s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo' for CMake config files
+[5.098s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_simulation_gazebo', 'cmake_prefix_path')
+[5.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.ps1'
+[5.099s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.dsv'
+[5.099s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/ur_simulation_gazebo/hook/cmake_prefix_path.sh'
+[5.099s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/bin'
+[5.100s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/lib/pkgconfig/ur_simulation_gazebo.pc'
+[5.100s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/lib/python3.10/site-packages'
+[5.100s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/bin'
+[5.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.ps1'
+[5.101s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.dsv'
+[5.101s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.sh'
+[5.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.bash'
+[5.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.zsh'
+[5.103s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/ur_simulation_gazebo/share/colcon-core/packages/ur_simulation_gazebo)
+[6.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/linkattacher_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/linkattacher_msgs -- -j12 -l12
+[6.180s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/linkattacher_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/linkattacher_msgs
+[6.256s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(linkattacher_msgs)
+[6.257s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs' for CMake module files
+[6.257s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/linkattacher_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/linkattacher_msgs
+[6.258s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs' for CMake config files
+[6.259s] Level 1:colcon.colcon_core.shell:create_environment_hook('linkattacher_msgs', 'cmake_prefix_path')
+[6.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/hook/cmake_prefix_path.ps1'
+[6.260s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/hook/cmake_prefix_path.dsv'
+[6.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/hook/cmake_prefix_path.sh'
+[6.261s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/lib'
+[6.261s] Level 1:colcon.colcon_core.shell:create_environment_hook('linkattacher_msgs', 'ld_library_path_lib')
+[6.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/hook/ld_library_path_lib.ps1'
+[6.261s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/hook/ld_library_path_lib.dsv'
+[6.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/hook/ld_library_path_lib.sh'
+[6.262s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/bin'
+[6.262s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/lib/pkgconfig/linkattacher_msgs.pc'
+[6.262s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/lib/python3.10/site-packages'
+[6.262s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/bin'
+[6.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/package.ps1'
+[6.263s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/package.dsv'
+[6.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/package.sh'
+[6.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/package.bash'
+[6.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/package.zsh'
+[6.265s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/colcon-core/packages/linkattacher_msgs)
+[6.357s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(linkattacher_msgs)
+[6.357s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs' for CMake module files
+[6.358s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs' for CMake config files
+[6.359s] Level 1:colcon.colcon_core.shell:create_environment_hook('linkattacher_msgs', 'cmake_prefix_path')
+[6.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/hook/cmake_prefix_path.ps1'
+[6.360s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/hook/cmake_prefix_path.dsv'
+[6.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/hook/cmake_prefix_path.sh'
+[6.362s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/lib'
+[6.362s] Level 1:colcon.colcon_core.shell:create_environment_hook('linkattacher_msgs', 'ld_library_path_lib')
+[6.362s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/hook/ld_library_path_lib.ps1'
+[6.363s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/hook/ld_library_path_lib.dsv'
+[6.364s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/hook/ld_library_path_lib.sh'
+[6.364s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/bin'
+[6.364s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/lib/pkgconfig/linkattacher_msgs.pc'
+[6.364s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/lib/python3.10/site-packages'
+[6.364s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/bin'
+[6.365s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/package.ps1'
+[6.366s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/package.dsv'
+[6.366s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/package.sh'
+[6.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/package.bash'
+[6.367s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/linkattacher_msgs/package.zsh'
+[6.367s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/linkattacher_msgs/share/colcon-core/packages/linkattacher_msgs)
+[30.692s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/realsense_gazebo_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/realsense_gazebo_plugin -- -j12 -l12
+[30.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/realsense_gazebo_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/realsense_gazebo_plugin
+[30.739s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense_gazebo_plugin)
+[30.740s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin' for CMake module files
+[30.740s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/realsense_gazebo_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/realsense_gazebo_plugin
+[30.741s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin' for CMake config files
+[30.741s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_gazebo_plugin', 'cmake_prefix_path')
+[30.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/cmake_prefix_path.ps1'
+[30.742s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/cmake_prefix_path.dsv'
+[30.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/cmake_prefix_path.sh'
+[30.743s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/lib'
+[30.743s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_gazebo_plugin', 'ld_library_path_lib')
+[30.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ld_library_path_lib.ps1'
+[30.744s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ld_library_path_lib.dsv'
+[30.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ld_library_path_lib.sh'
+[30.744s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/bin'
+[30.744s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/lib/pkgconfig/realsense_gazebo_plugin.pc'
+[30.744s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/lib/python3.10/site-packages'
+[30.745s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/bin'
+[30.745s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.ps1'
+[30.745s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.dsv'
+[30.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.sh'
+[30.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.bash'
+[30.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.zsh'
+[30.747s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/colcon-core/packages/realsense_gazebo_plugin)
+[30.779s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense_gazebo_plugin)
+[30.780s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin' for CMake module files
+[30.780s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin' for CMake config files
+[30.781s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_gazebo_plugin', 'cmake_prefix_path')
+[30.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/cmake_prefix_path.ps1'
+[30.782s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/cmake_prefix_path.dsv'
+[30.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/cmake_prefix_path.sh'
+[30.782s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/lib'
+[30.783s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_gazebo_plugin', 'ld_library_path_lib')
+[30.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ld_library_path_lib.ps1'
+[30.783s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ld_library_path_lib.dsv'
+[30.784s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ld_library_path_lib.sh'
+[30.784s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/bin'
+[30.784s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/lib/pkgconfig/realsense_gazebo_plugin.pc'
+[30.785s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/lib/python3.10/site-packages'
+[30.785s] Level 1:colcon.colcon_core.environment:checking '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/bin'
+[30.785s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.ps1'
+[30.786s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.dsv'
+[30.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.sh'
+[30.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.bash'
+[30.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.zsh'
+[30.788s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/soumyajit/Eyantra-CoBot-24/src/install/realsense_gazebo_plugin/share/colcon-core/packages/realsense_gazebo_plugin)
+[30.788s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[30.789s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[30.789s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[30.789s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[30.795s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[30.795s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[30.795s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[30.812s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[30.812s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/soumyajit/Eyantra-CoBot-24/src/install/local_setup.ps1'
+[30.814s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/soumyajit/Eyantra-CoBot-24/src/install/_local_setup_util_ps1.py'
+[30.816s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/soumyajit/Eyantra-CoBot-24/src/install/setup.ps1'
+[30.818s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/soumyajit/Eyantra-CoBot-24/src/install/local_setup.sh'
+[30.819s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/soumyajit/Eyantra-CoBot-24/src/install/_local_setup_util_sh.py'
+[30.819s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/soumyajit/Eyantra-CoBot-24/src/install/setup.sh'
+[30.820s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/soumyajit/Eyantra-CoBot-24/src/install/local_setup.bash'
+[30.821s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/soumyajit/Eyantra-CoBot-24/src/install/setup.bash'
+[30.822s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/soumyajit/Eyantra-CoBot-24/src/install/local_setup.zsh'
+[30.823s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/soumyajit/Eyantra-CoBot-24/src/install/setup.zsh'

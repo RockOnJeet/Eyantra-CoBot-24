@@ -1,0 +1,85 @@
+[0.035s] Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/pymoveit2 -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2
+[0.164s] -- The C compiler identification is GNU 11.4.0
+[0.287s] -- The CXX compiler identification is GNU 11.4.0
+[0.295s] -- Detecting C compiler ABI info
+[0.388s] -- Detecting C compiler ABI info - done
+[0.398s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.398s] -- Detecting C compile features
+[0.401s] -- Detecting C compile features - done
+[0.404s] -- Detecting CXX compiler ABI info
+[0.523s] -- Detecting CXX compiler ABI info - done
+[0.533s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.533s] -- Detecting CXX compile features
+[0.533s] -- Detecting CXX compile features - done
+[0.537s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.749s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.107s] -- Configuring done
+[1.110s] -- Generating done
+[1.112s] -- Build files have been written to: /home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2
+[1.117s] Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/pymoveit2 -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2
+[1.120s] Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2 -- -j12 -l12
+[1.186s] Built target ament_cmake_python_copy_pymoveit2
+[1.537s] running egg_info
+[1.538s] creating pymoveit2.egg-info
+[1.539s] writing pymoveit2.egg-info/PKG-INFO
+[1.539s] writing dependency_links to pymoveit2.egg-info/dependency_links.txt
+[1.539s] writing top-level names to pymoveit2.egg-info/top_level.txt
+[1.540s] writing manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[1.542s] reading manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[1.543s] writing manifest file 'pymoveit2.egg-info/SOURCES.txt'
+[1.590s] Built target ament_cmake_python_build_pymoveit2_egg
+[1.605s] Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2 -- -j12 -l12
+[1.637s] Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2
+[1.646s] -- Install configuration: ""
+[1.647s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/environment/pythonpath.sh
+[1.647s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/environment/pythonpath.dsv
+[1.647s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-2.1.0-py3.10.egg-info
+[1.648s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-2.1.0-py3.10.egg-info/SOURCES.txt
+[1.648s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-2.1.0-py3.10.egg-info/PKG-INFO
+[1.648s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-2.1.0-py3.10.egg-info/top_level.txt
+[1.648s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2-2.1.0-py3.10.egg-info/dependency_links.txt
+[1.648s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2
+[1.648s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots
+[1.648s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/kinova.py
+[1.648s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/ur5.py
+[1.648s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/__init__.py
+[1.648s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/moveit2.py
+[1.649s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/__init__.py
+[1.649s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/moveit2_servo.py
+[1.699s] Listing '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2'...
+[1.699s] Compiling '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/__init__.py'...
+[1.699s] Compiling '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/moveit2.py'...
+[1.700s] Compiling '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/moveit2_servo.py'...
+[1.700s] Listing '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots'...
+[1.700s] Compiling '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/__init__.py'...
+[1.700s] Compiling '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/kinova.py'...
+[1.700s] Compiling '/home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/local/lib/python3.10/dist-packages/pymoveit2/robots/ur5.py'...
+[1.707s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/pymoveit2/ex_collision_object.py
+[1.707s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/pymoveit2/ex_joint_goal.py
+[1.708s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/pymoveit2/ex_pose_goal.py
+[1.708s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/pymoveit2/ex_servo.py
+[1.708s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/pymoveit2/assets
+[1.708s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/pymoveit2/assets/box2.stl
+[1.708s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/pymoveit2/assets/rack.stl
+[1.718s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/pymoveit2/assets/box1.stl
+[1.718s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/pymoveit2/assets/rack_box.stl
+[1.718s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/pymoveit2/assets/box3.stl
+[1.719s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/pymoveit2/assets/rack_box_again.stl
+[1.719s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/pymoveit2/assets/suzanne.stl
+[1.720s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/lib/pymoveit2/assets/box.stl
+[1.720s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/ament_index/resource_index/package_run_dependencies/pymoveit2
+[1.721s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/ament_index/resource_index/parent_prefix_path/pymoveit2
+[1.723s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/environment/ament_prefix_path.sh
+[1.723s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/environment/ament_prefix_path.dsv
+[1.724s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/environment/path.sh
+[1.724s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/environment/path.dsv
+[1.724s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/local_setup.bash
+[1.724s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/local_setup.sh
+[1.724s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/local_setup.zsh
+[1.724s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/local_setup.dsv
+[1.724s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/package.dsv
+[1.724s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/ament_index/resource_index/packages/pymoveit2
+[1.724s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/cmake/pymoveit2Config.cmake
+[1.724s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/cmake/pymoveit2Config-version.cmake
+[1.725s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/pymoveit2/share/pymoveit2/package.xml
+[1.726s] Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/pymoveit2

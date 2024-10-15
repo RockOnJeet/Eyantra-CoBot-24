@@ -1,0 +1,96 @@
+[0.042s] Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/ebot_description -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description
+[0.184s] -- The C compiler identification is GNU 11.4.0
+[0.303s] -- The CXX compiler identification is GNU 11.4.0
+[0.313s] -- Detecting C compiler ABI info
+[0.406s] -- Detecting C compiler ABI info - done
+[0.420s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.420s] -- Detecting C compile features
+[0.420s] -- Detecting C compile features - done
+[0.423s] -- Detecting CXX compiler ABI info
+[0.559s] -- Detecting CXX compiler ABI info - done
+[0.570s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.570s] -- Detecting CXX compile features
+[0.570s] -- Detecting CXX compile features - done
+[0.578s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.817s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.966s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.037s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.043s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.061s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.078s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.110s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.195s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.204s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.335s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.367s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.416s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.436s] -- Looking for pthread.h
+[1.546s] -- Looking for pthread.h - found
+[1.547s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.643s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.644s] -- Found Threads: TRUE  
+[1.744s] -- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)
+[1.744s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[1.797s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[1.800s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.914s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.917s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.920s] -- Added test 'lint_cmake' to check CMake code style
+[1.920s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.922s] -- Added test 'xmllint' to check XML markup files
+[1.924s] -- Configuring done
+[1.928s] -- Generating done
+[1.931s] -- Build files have been written to: /home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description
+[1.942s] Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake /home/soumyajit/Eyantra-CoBot-24/src/ebot_description -DCMAKE_INSTALL_PREFIX=/home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description
+[1.944s] Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description -- -j12 -l12
+[1.994s] Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --build /home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description -- -j12 -l12
+[2.022s] Invoking command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description
+[2.032s] -- Install configuration: ""
+[2.032s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//launch
+[2.032s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//launch/start_world_task1c_launch.py
+[2.032s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//launch/ebot_gazebo_launch.py
+[2.032s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//launch/spawn_robot.py
+[2.032s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//launch/start_world_task1b_launch.py
+[2.033s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//launch/start_world_launch.py
+[2.033s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//worlds
+[2.033s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//worlds/empty.world
+[2.033s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//models
+[2.033s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//models/ebot
+[2.033s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//models/ebot/ebot_description.xacro
+[2.033s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//models/ebot/ebot.gazebo
+[2.033s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes
+[2.033s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes/RHUS7.STL
+[2.033s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes/FUS2.STL
+[2.034s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes/robot_base.stl
+[2.035s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes/LHUS9.STL
+[2.035s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes/FUS3.STL
+[2.036s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes/RHUS9.STL
+[2.036s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes/FUS1.STL
+[2.037s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes/LHUS10.STL
+[2.037s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes/FWL.STL
+[2.039s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes/FUS4.STL
+[2.040s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes/RWL.STL
+[2.042s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes/RUS6.STL
+[2.043s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes/chassis.dae
+[2.108s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes/FWR.STL
+[2.110s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes/RWR.STL
+[2.112s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//meshes/RUS5.STL
+[2.113s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//plugins
+[2.113s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//plugins/libgazebo_ros_vacuum_gripper.so
+[2.120s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description//plugins/libgazebo_collision_sensor.so
+[2.126s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ament_index/resource_index/package_run_dependencies/ebot_description
+[2.126s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ament_index/resource_index/parent_prefix_path/ebot_description
+[2.126s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/environment/ament_prefix_path.sh
+[2.126s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/environment/ament_prefix_path.dsv
+[2.127s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/environment/path.sh
+[2.127s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/environment/path.dsv
+[2.127s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/local_setup.bash
+[2.127s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/local_setup.sh
+[2.127s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/local_setup.zsh
+[2.127s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/local_setup.dsv
+[2.127s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/package.dsv
+[2.128s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ament_index/resource_index/packages/ebot_description
+[2.128s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/cmake/ebot_descriptionConfig.cmake
+[2.128s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/cmake/ebot_descriptionConfig-version.cmake
+[2.129s] -- Installing: /home/soumyajit/Eyantra-CoBot-24/src/install/ebot_description/share/ebot_description/package.xml
+[2.130s] Invoked command in '/home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/soumyajit/Eyantra-CoBot-24/install/ur5_control:/opt/ros/humble /usr/bin/cmake --install /home/soumyajit/Eyantra-CoBot-24/src/build/ebot_description
